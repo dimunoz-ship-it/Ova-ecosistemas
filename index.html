@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ecosistemas · OVA de Ciencias Naturales · Grado 6°</title>
   <meta name="description" content="Objeto Virtual de Aprendizaje sobre ecosistemas para grado sexto: video, actividades interactivas y evaluación.">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body data-screen="inicio">
 
@@ -21,7 +21,7 @@
 
   <header class="top">
       <button class="brand" data-go="inicio" aria-label="Ir al inicio">
-        <img class="brand-logo" src="assets/logo.webp" alt="" width="40" height="40">
+        <img class="brand-logo" src="logo.webp" alt="" width="40" height="40">
         <span>Ecosistemas</span>
       </button>
       <div class="top-tag">Ciencias Naturales<br>Grado 6°</div>
@@ -35,7 +35,7 @@
       <div class="hero">
         <div class="hero-text">
           <div class="logo-wrap">
-            <img class="hero-logo" src="assets/logo.webp" width="140" height="140" fetchpriority="high" alt="Logo del OVA Ecosistemas: un paisaje con montaña, sol y río dentro de un círculo con hojas">
+            <img class="hero-logo" src="logo.webp" width="140" height="140" fetchpriority="high" alt="Logo del OVA Ecosistemas: un paisaje con montaña, sol y río dentro de un círculo con hojas">
           </div>
           <p class="kicker">Ciencias Naturales · Grado 6°</p>
           <h1 aria-label="Ecosistemas"><span aria-hidden="true">Ec<span class="o-leaf"><svg viewBox="0 0 100 100" focusable="false"><circle cx="50" cy="50" r="38" fill="#14532D" stroke="currentColor" stroke-width="24"/><g class="leaf"><path d="M50 78C24 66 22 38 50 20c28 18 26 46 0 58z" fill="#FFF8E7"/><path d="M50 74V38" stroke="#14532D" stroke-width="4.5" stroke-linecap="round" fill="none"/></g></svg></span><span class="rest">sistemas</span></span></h1>
@@ -43,10 +43,10 @@
           <button class="btn btn-big pulse" data-go="contenido">Continuar <span aria-hidden="true">→</span></button>
         </div>
 
-        <!-- Imagen principal de la portada: assets/imagen-inicio.webp (para cambiarla, reemplaza ese archivo conservando el nombre) -->
+        <!-- Imagen principal de la portada: imagen-inicio.webp (para cambiarla, reemplaza ese archivo conservando el nombre) -->
         <div class="art-wrap" id="art-wrap">
           <div class="hero-art">
-            <img class="scene" src="assets/imagen-inicio.webp" width="1536" height="1024" fetchpriority="high" decoding="async"
+            <img class="scene" src="imagen-inicio.webp" width="1536" height="1024" fetchpriority="high" decoding="async"
                  alt="Paisaje de montaña con un río de aguas claras donde nadan peces y descansa una rana. En la orilla hay un venado, un conejo y una garza; un martín pescador está en una rama y un ave rapaz vuela en el cielo.">
           </div>
         </div>
@@ -74,12 +74,12 @@
       <div class="video" id="video-box">
         <!--
           ZONA DEL VIDEO
-          Copia tu video descargado en:  assets/video/ecosistemas.mp4
+          Copia tu video descargado en:  ecosistemas.mp4
           (MP4 con video H.264 y audio AAC). Si tu archivo se llama distinto, cambia el nombre del archivo o la ruta de src aquí abajo.
           Mientras el archivo no exista, la página muestra el aviso de abajo con el enlace a YouTube.
         -->
         <video id="ova-video" controls preload="metadata" playsinline>
-          <source src="assets/video/ecosistemas.mp4#t=0.1" type="video/mp4">
+          <source src="ecosistemas.mp4#t=0.1" type="video/mp4">
           Tu navegador no puede reproducir este video.
         </video>
         <div class="video-fallback" id="video-fallback" hidden>
@@ -160,7 +160,7 @@
     <!-- ============ 5. CRÉDITOS ============ -->
     <section id="creditos" class="screen" tabindex="-1" aria-label="Créditos">
       <div class="credits card">
-        <img class="hero-logo" src="assets/logo.webp" alt="" width="72" height="72">
+        <img class="hero-logo" src="logo.webp" alt="" width="72" height="72">
         <h2>Créditos</h2>
         <div class="credit"><small>Elaborado por</small><b>Darling Muñoz Galván</b><b>Zuriel Maita Pérez</b><b>Kennyn Márquez Rada</b></div>
         <div class="credit"><small>Estudiantes de</small><b>Licenciatura en Informática</b><span>Universidad de Córdoba</span></div>
@@ -193,6 +193,6 @@
   <div id="live-region" class="visually-hidden" aria-live="polite"></div>
   <div id="toast" role="status" aria-live="polite"></div>
   <noscript><p style="padding:20px;text-align:center">Este OVA necesita JavaScript para funcionar.</p></noscript>
-  <script src="js/app.js" defer></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
