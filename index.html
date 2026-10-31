@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecosistemas · OVA de Ciencias Naturales · Grado 6°</title>
+  <meta name="description" content="Objeto Virtual de Aprendizaje sobre ecosistemas para grado sexto: video, actividades interactivas y evaluación.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-screen="inicio">
+
+  <div class="bg-layer" id="bgLayer0"></div>
+  <div class="bg-layer" id="bgLayer1" style="opacity:0"></div>
+  <div class="geo geo1" aria-hidden="true"></div><div class="geo geo2" aria-hidden="true"></div><div class="geo geo3" aria-hidden="true"></div>
+
+  <div class="wrap">
+
+  <header class="top">
+      <button class="brand" data-go="inicio" aria-label="Ir al inicio">
+        <img class="brand-logo" src="assets/logo.webp" alt="" width="40" height="40">
+        <span>Ecosistemas</span>
+      </button>
+      <div class="top-tag">Ciencias Naturales<br>Grado 6°</div>
+    </header>
+    <nav class="stepper" id="stepper" aria-label="Progreso del OVA"></nav>
+
+  <main>
+
+    <!-- ============ 1. INICIO ============ -->
+    <section id="inicio" class="screen active" tabindex="-1" aria-label="Inicio">
+      <div class="hero">
+        <div class="hero-text">
+          <div class="logo-wrap">
+            <img class="hero-logo" src="assets/logo.webp" width="140" height="140" fetchpriority="high" alt="Logo del OVA Ecosistemas: un paisaje con montaña, sol y río dentro de un círculo con hojas">
+          </div>
+          <p class="kicker">Ciencias Naturales · Grado 6°</p>
+          <h1 aria-label="Ecosistemas"><span aria-hidden="true">Ec<span class="o-leaf"><svg viewBox="0 0 100 100" focusable="false"><circle cx="50" cy="50" r="38" fill="#14532D" stroke="currentColor" stroke-width="24"/><g class="leaf"><path d="M50 78C24 66 22 38 50 20c28 18 26 46 0 58z" fill="#FFF8E7"/><path d="M50 74V38" stroke="#14532D" stroke-width="4.5" stroke-linecap="round" fill="none"/></g></svg></span><span class="rest">sistemas</span></span></h1>
+          <p class="lead">Descubre cómo se conecta la vida: dónde viven los seres vivos, cómo se relacionan y quién se come a quién.</p>
+          <button class="btn btn-big pulse" data-go="contenido">Continuar <span aria-hidden="true">→</span></button>
+        </div>
+
+        <!-- Imagen principal de la portada: assets/imagen-inicio.webp (para cambiarla, reemplaza ese archivo conservando el nombre) -->
+        <div class="art-wrap" id="art-wrap">
+          <div class="hero-art">
+            <img class="scene" src="assets/imagen-inicio.webp" width="1536" height="1024" fetchpriority="high" decoding="async"
+                 alt="Paisaje de montaña con un río de aguas claras donde nadan peces y descansa una rana. En la orilla hay un venado, un conejo y una garza; un martín pescador está en una rama y un ave rapaz vuela en el cielo.">
+          </div>
+        </div>
+      </div>
+
+      <!-- Ola animada al pie de la tarjeta -->
+      <svg class="wave" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        
+        <g class="w1"><path d="M0 40c100-30 200-30 300 0s200 30 300 0 200-30 300 0 200 30 300 0 200-30 300 0 200 30 300 0V80H0z" fill="#2A9DD8" fill-opacity=".35"/></g>
+        <g class="w2"><path d="M0 50c100-24 200-24 300 0s200 24 300 0 200-24 300 0 200 24 300 0 200-24 300 0 200 24 300 0V80H0z" fill="#2E9E5B" fill-opacity=".55"/></g>
+      </svg>
+    </section>
+
+    <!-- ============ 2. CONTENIDO ============ -->
+    <section id="contenido" class="screen" tabindex="-1" aria-label="Contenido">
+      <h2>Aprende sobre ecosistemas</h2>
+      <p class="lead">Mira el video y luego toca las tarjetas para repasar.</p>
+
+      <div class="learn" aria-label="Lo que vas a aprender">
+        <div class="learn-item"><span aria-hidden="true">🌳</span><b>Tipos de ecosistema</b></div>
+        <div class="learn-item"><span aria-hidden="true">🤝</span><b>Relaciones biológicas</b></div>
+        <div class="learn-item"><span aria-hidden="true">🔗</span><b>Cadena alimenticia</b></div>
+      </div>
+
+      <div class="video" id="video-box">
+        <!--
+          ZONA DEL VIDEO
+          Copia tu video descargado en:  assets/video/ecosistemas.mp4
+          (MP4 con video H.264 y audio AAC). Si tu archivo se llama distinto, cambia el nombre del archivo o la ruta de src aquí abajo.
+          Mientras el archivo no exista, la página muestra el aviso de abajo con el enlace a YouTube.
+        -->
+        <video id="ova-video" controls preload="metadata" playsinline>
+          <source src="assets/video/ecosistemas.mp4#t=0.1" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+        <div class="video-fallback" id="video-fallback" hidden>
+          <span class="big" aria-hidden="true">🎬</span>
+          <b>No pudimos cargar el video</b>
+          <a class="btn" href="https://www.youtube.com/watch?v=XQoRC7hv7KE" target="_blank" rel="noopener">▶ Verlo en YouTube</a>
+        </div>
+      </div>
+      <p class="video-note">Si el video no carga, <a href="https://www.youtube.com/watch?v=XQoRC7hv7KE" target="_blank" rel="noopener">ábrelo en YouTube</a>.</p>
+
+      <h3 class="section-title">Repasa con las tarjetas</h3>
+      <p class="muted">Toca una tarjeta para darle la vuelta.</p>
+      <div class="flip">
+        <button class="fcard" aria-pressed="false">
+          <span class="in">
+            <span class="face front f-green"><span class="big" aria-hidden="true">🏞️</span><b>¿Qué es un ecosistema?</b><small>Toca para ver</small></span>
+            <span class="face back"><b>Ecosistema</b>Es un lugar donde los <em>seres vivos</em> (plantas, animales, hongos) conviven y se relacionan con elementos <em>sin vida</em> como el agua, la luz del sol, el aire y el suelo.</span>
+          </span>
+        </button>
+        <button class="fcard" aria-pressed="false">
+          <span class="in">
+            <span class="face front f-blue"><span class="big" aria-hidden="true">🌍</span><b>Tipos de ecosistema</b><small>Toca para ver</small></span>
+            <span class="face back"><b>Tres grandes tipos</b><span><em>Terrestres:</em> bosque, desierto, sabana.</span><span><em>Acuáticos:</em> mar, ríos, lagos.</span><span><em>Mixtos:</em> tienen agua y tierra, como los humedales y manglares.</span></span>
+          </span>
+        </button>
+        <button class="fcard" aria-pressed="false">
+          <span class="in">
+            <span class="face front f-orange"><span class="big" aria-hidden="true">🤝</span><b>Relaciones biológicas</b><small>Toca para ver</small></span>
+            <span class="face back"><b>Cómo se relacionan</b><span><em>Depredación:</em> uno caza al otro.</span><span><em>Competencia:</em> pelean por lo mismo.</span><span><em>Mutualismo:</em> los dos ganan.</span><span><em>Parasitismo:</em> uno vive a costa del otro.</span><span><em>Comensalismo:</em> uno gana y el otro ni gana ni pierde.</span></span>
+          </span>
+        </button>
+        <button class="fcard" aria-pressed="false">
+          <span class="in">
+            <span class="face front f-yellow"><span class="big" aria-hidden="true">🔗</span><b>Cadena alimenticia</b><small>Toca para ver</small></span>
+            <span class="face back"><b>Quién se come a quién</b>La energía empieza en el Sol. Los <em>productores</em> (plantas) la capturan, los <em>consumidores</em> se alimentan de otros seres vivos y los <em>descomponedores</em> (hongos, bacterias) reciclan lo que queda.</span>
+          </span>
+        </button>
+      </div>
+
+      <div class="fact card">
+        <p class="fact-text" id="fact-text">¿Sabías que...? Toca el botón para descubrir un dato curioso.</p>
+        <button class="btn btn-green" id="fact-btn">💡 Dato curioso</button>
+      </div>
+
+      <div class="btn-row"><button class="btn btn-ghost" data-go="inicio">← Atrás</button><button class="btn btn-big" data-go="actividades">Ir a las actividades <span aria-hidden="true">→</span></button></div>
+    </section>
+
+    <!-- ============ 3. ACTIVIDADES ============ -->
+    <section id="actividades" class="screen" tabindex="-1" aria-label="Actividades">
+      <div id="act-menu">
+        <h2>Actividades</h2>
+        <p class="lead">Juega y aprende. Cada actividad que completes te da una insignia, y puedes hacerlas en el orden que quieras.</p>
+        <div class="badges-row" id="act-badges"></div>
+        <div class="act-grid">
+          <button class="act-card" data-act="1"><span class="num">1</span><span class="ico" aria-hidden="true">🧩</span><b>¿Dónde vive?</b><small>Arrastrar y soltar · Tipos de ecosistema</small><span class="star" aria-hidden="true">⭐</span></button>
+          <button class="act-card" data-act="2"><span class="num">2</span><span class="ico" aria-hidden="true">🕵️</span><b>Detective de relaciones</b><small>Unir · Relaciones biológicas</small><span class="star" aria-hidden="true">⭐</span></button>
+          <button class="act-card" data-act="3"><span class="num">3</span><span class="ico" aria-hidden="true">🔗</span><b>Arma la cadena</b><small>Ordenar · Cadena alimenticia</small><span class="star" aria-hidden="true">⭐</span></button>
+          <button class="act-card" data-act="4"><span class="num">4</span><span class="ico" aria-hidden="true">🃏</span><b>Parejas del ecosistema</b><small>Memoria · Vocabulario</small><span class="star" aria-hidden="true">⭐</span></button>
+        </div>
+        <div class="btn-row"><button class="btn btn-ghost" data-go="contenido">← Atrás</button><button class="btn btn-big" data-go="evaluacion">Ir a la evaluación <span aria-hidden="true">→</span></button></div>
+      </div>
+      <div id="act-view" hidden>
+        <div class="act-bar">
+          <button class="btn btn-ghost" id="act-back">← Actividades</button>
+          <button class="btn btn-ghost" id="act-restart">↻ Reiniciar</button>
+        </div>
+        <div id="act-body"></div>
+      </div>
+    </section>
+
+    <!-- ============ 4. EVALUACIÓN ============ -->
+    <section id="evaluacion" class="screen" tabindex="-1" aria-label="Evaluación">
+      <h2>Evaluación</h2>
+      <div class="badges-row" id="quiz-badges"></div>
+      <div id="quiz" class="quiz"></div>
+    </section>
+
+    <!-- ============ 5. CRÉDITOS ============ -->
+    <section id="creditos" class="screen" tabindex="-1" aria-label="Créditos">
+      <div class="credits card">
+        <img class="hero-logo" src="assets/logo.webp" alt="" width="72" height="72">
+        <h2>Créditos</h2>
+        <div class="credit"><small>Elaborado por</small><b>Darling Muñoz Galván</b><b>Zuriel Maita Pérez</b><b>Kennyn Márquez Rada</b></div>
+        <div class="credit"><small>Estudiantes de</small><b>Licenciatura en Informática</b><span>Universidad de Córdoba</span></div>
+        <div class="credit"><small>Curso</small><b>Fundamentos de Algoritmia</b><span>Profesor: Aly Benhur Culchac de la Vega</span></div>
+        <div class="credit-btns">
+          <button class="btn btn-ghost" data-go="evaluacion">← Atrás</button>
+          <button class="btn btn-green" data-go="recursos">Ver recursos</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. RECURSOS ============ -->
+    <section id="recursos" class="screen" tabindex="-1" aria-label="Recursos">
+      <h2>Recursos</h2>
+      <p class="lead">Todo lo que usamos para armar este OVA.</p>
+      <div class="res-grid">
+        <a class="res card" href="https://www.youtube.com/watch?v=XQoRC7hv7KE" target="_blank" rel="noopener"><span class="ico" aria-hidden="true">📺</span><b>Video</b><span>«Ecosistema - Relación y Nutrición», canal Aula chachi (YouTube)</span></a>
+        <a class="res card" href="https://fonts.google.com/specimen/Fredoka" target="_blank" rel="noopener"><span class="ico" aria-hidden="true">🔤</span><b>Tipografías</b><span>Fredoka y Nunito, de Google Fonts (licencia SIL Open Font)</span></a>
+        <div class="res card"><span class="ico" aria-hidden="true">🎨</span><b>Imágenes y logo</b><span>Logo provisional del equipo. Imagen de portada: <span class="todo">[por completar: autor o herramienta y licencia]</span></span></div>
+        <div class="res card"><span class="ico" aria-hidden="true">😀</span><b>Íconos de las actividades</b><span>Emojis del sistema, temporales hasta tener ilustraciones propias</span></div>
+        <div class="res card"><span class="ico" aria-hidden="true">💻</span><b>Herramientas</b><span>HTML, CSS y JavaScript; código en un repositorio de GitHub</span></div>
+        <div class="res card"><span class="ico" aria-hidden="true">📖</span><b>Fuentes del contenido</b><span class="todo">[Por completar con las fuentes de las definiciones]</span></div>
+      </div>
+      <div class="btn-row"><button class="btn btn-ghost" data-go="creditos">← Atrás</button><button class="btn btn-green" data-go="inicio">Volver al inicio</button></div>
+    </section>
+
+  </main>
+  </div><!-- /wrap -->
+
+  <div id="live-region" class="visually-hidden" aria-live="polite"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p style="padding:20px;text-align:center">Este OVA necesita JavaScript para funcionar.</p></noscript>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
